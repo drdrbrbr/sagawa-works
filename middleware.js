@@ -11,7 +11,7 @@ export default function middleware(req) {
       const decoded = atob(encoded);
       const [user, password] = decoded.split(":");
       if (user === "portfolio" && password === "tyuhbnm") {
-        return new Response(null, { status: 200 });
+        return;
       }
     }
   }
