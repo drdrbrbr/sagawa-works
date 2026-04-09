@@ -1,4 +1,4 @@
 ---
-{"dg-publish":true,"permalink":"/ufj/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
+{"dg-publish":true,"dg-permalink":"competitor-mufj","permalink":"/competitor-mufj/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
 ---
 

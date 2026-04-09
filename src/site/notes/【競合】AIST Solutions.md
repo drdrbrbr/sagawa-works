@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aist-solutions/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
+{"dg-publish":true,"dg-permalink":"competitor-aist","permalink":"/competitor-aist/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
 ---
 
 

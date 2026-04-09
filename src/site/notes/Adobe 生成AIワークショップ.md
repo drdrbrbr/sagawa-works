@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/adobe-ai/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
+{"dg-publish":true,"dg-permalink":"adobe-ai-workshop","permalink":"/adobe-ai-workshop/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
 ---
 
 

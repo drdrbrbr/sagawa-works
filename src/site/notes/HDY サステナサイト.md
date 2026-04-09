@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hdy/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
+{"dg-publish":true,"dg-permalink":"hdy-sustaina","permalink":"/hdy-sustaina/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
 ---
 
 AD：佐川
