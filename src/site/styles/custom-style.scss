@@ -1,9 +1,29 @@
+:root,
+.theme-dark,
+body.theme-dark {
+    --background-primary: #ffffff;
+    --background-primary-alt: #fdfdfd;
+    --background-secondary: #ececec;
+    --background-secondary-alt: #ffffff;
+    --background-modifier-border: #e0e0e0;
+
+    --text-normal: #1a1a1a;
+    --text-muted: #888888;
+    --text-faint: #aaaaaa;
+    --text-accent: #1a1a1a;
+    --text-accent-hover: #444444;
+    --text-on-accent: #ffffff;
+
+    --interactive-accent: #1a1a1a;
+    --interactive-accent-hover: #333333;
+}
+
 body {
     /* Colors */
     --background-primary: #ffffff;
-    --background-primary-alt: #f8f8f8;
-    --background-secondary: #f4f4f4;
-    --background-secondary-alt: #eeeeee;
+    --background-primary-alt: #fdfdfd;
+    --background-secondary: #ffffff;
+    --background-secondary-alt: #ffffff;
     --background-modifier-border: #e0e0e0;
 
     --text-normal: #1a1a1a;
@@ -19,21 +39,90 @@ body {
     /* Typography */
     --dg-content-font-size: 16px;
     --dg-content-line-height: 1.8;
-    --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-monospace: "JetBrains Mono", "Fira Code", monospace;
+    --font-text: "Geist Mono", "Zen Kaku Gothic New", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-monospace: "Geist Mono", "Zen Kaku Gothic New", "JetBrains Mono", "Fira Code", monospace;
+    --font-default: var(--font-text);
 
     /* Layout */
-    --dg-content-max-width: 680px;
+    --dg-content-max-width: 920px;
 
     /* Remove decorative elements */
     background-color: var(--background-primary);
     color: var(--text-normal);
+    font-family: var(--font-text);
 
     /* Navbar */
     .navbar {
         background-color: var(--background-primary);
         border-bottom: 1px solid var(--background-modifier-border);
         box-shadow: none;
+    }
+
+    /* Side menus */
+    .filetree-wrapper,
+    .filetree-sidebar,
+    .sidebar,
+    .sidebar-container,
+    .toc-container,
+    .toc,
+    .backlink-list,
+    .backlink-card,
+    .backlinks {
+        background-color: var(--background-primary);
+    }
+
+    .filetree-wrapper,
+    .filetree-sidebar {
+        border-right: 1px solid var(--background-modifier-border);
+    }
+
+    .filetree-sidebar h1 {
+        text-align: left;
+        width: 100%;
+    }
+
+    @media (min-width: 1001px) {
+        .filetree-wrapper {
+            width: var(--dg-filetree-width);
+            min-width: var(--dg-filetree-width);
+            left: 0;
+            justify-content: flex-start;
+        }
+
+        .content {
+            margin-left: calc(var(--dg-filetree-width) + 20px);
+        }
+    }
+
+    .folder>div:not(.filelist)>.notelink {
+        margin-left: 0px;
+        padding-left: 0px;
+        border-left: none;
+    }
+
+    #graph-controls {
+        background-color: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--background-modifier-border);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        color: var(--text-normal);
+
+        i, svg {
+            opacity: 0.9;
+            color: var(--text-normal);
+
+            &:hover {
+                opacity: 1;
+                color: var(--text-accent);
+            }
+        }
+    }
+
+    #full-graph-close {
+        color: var(--text-normal);
+
+        &:hover {
+            color: var(--text-accent);
+        }
     }
 
     /* Links */
@@ -58,12 +147,14 @@ body {
         border-radius: 3px;
         padding: 0.1em 0.4em;
         font-size: 0.9em;
+        font-family: var(--font-monospace);
     }
 
     pre {
         background-color: var(--background-secondary);
         border: 1px solid var(--background-modifier-border);
         border-radius: 6px;
+        font-family: var(--font-monospace);
     }
 
     /* Blockquote */
@@ -81,4 +172,9 @@ body {
         border-radius: 3px;
         font-size: 0.8rem;
     }
+}
+
+html,
+body {
+    background-color: #ffffff;
 }
