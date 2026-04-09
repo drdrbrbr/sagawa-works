@@ -1,13 +1,84 @@
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    /* Colors */
+    --background-primary: #ffffff;
+    --background-primary-alt: #f8f8f8;
+    --background-secondary: #f4f4f4;
+    --background-secondary-alt: #eeeeee;
+    --background-modifier-border: #e0e0e0;
+
+    --text-normal: #1a1a1a;
+    --text-muted: #888888;
+    --text-faint: #aaaaaa;
+    --text-accent: #1a1a1a;
+    --text-accent-hover: #444444;
+    --text-on-accent: #ffffff;
+
+    --interactive-accent: #1a1a1a;
+    --interactive-accent-hover: #333333;
+
+    /* Typography */
+    --dg-content-font-size: 16px;
+    --dg-content-line-height: 1.8;
+    --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-monospace: "JetBrains Mono", "Fira Code", monospace;
+
+    /* Layout */
+    --dg-content-max-width: 680px;
+
+    /* Remove decorative elements */
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+
+    /* Navbar */
+    .navbar {
+        background-color: var(--background-primary);
+        border-bottom: 1px solid var(--background-modifier-border);
+        box-shadow: none;
+    }
+
+    /* Links */
+    a {
+        color: var(--text-normal);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+
+        &:hover {
+            color: var(--text-muted);
+        }
+    }
+
+    /* Headings */
+    h1 { font-size: 1.8rem; font-weight: 700; }
+    h2 { font-size: 1.3rem; font-weight: 600; }
+    h3 { font-size: 1.1rem; font-weight: 600; }
+
+    /* Code */
+    code {
+        background-color: var(--background-secondary);
+        border-radius: 3px;
+        padding: 0.1em 0.4em;
+        font-size: 0.9em;
+    }
+
+    pre {
+        background-color: var(--background-secondary);
+        border: 1px solid var(--background-modifier-border);
+        border-radius: 6px;
+    }
+
+    /* Blockquote */
+    blockquote {
+        border-left: 3px solid var(--background-modifier-border);
+        color: var(--text-muted);
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+
+    /* Tags */
+    .tag {
+        background-color: var(--background-secondary);
+        color: var(--text-muted);
+        border-radius: 3px;
+        font-size: 0.8rem;
+    }
 }
