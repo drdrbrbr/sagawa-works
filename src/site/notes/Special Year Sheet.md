@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/special-year-sheet/","tags":["portfolio"],"dg-note-properties":{"tags":["portfolio"]}}
+{"dg-publish":true,"permalink":"/special-year-sheet/","tags":["portfolio","inner"],"dg-note-properties":{"tags":["portfolio","inner"]}}
 ---
 
 ## 佐川
