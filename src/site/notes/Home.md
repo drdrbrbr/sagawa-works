@@ -13,15 +13,8 @@ FY25の代表的な作品一覧です。
 - [[HDY サステナサイト\|HDY サステナサイト]]
 - [[HDY ONE\|HDY ONE]]
 - [[Creativity Engine Bloom Design System\|Creativity Engine Bloom Design System]]
-- [[SRHR\|SRHR]]
 - [[松山大学\|松山大学]]
-
-## 競合
-
-- [[【競合】ダッシュボード\|【競合】ダッシュボード]]
 - [[【競合】AIST Solutions\|【競合】AIST Solutions]]
-- [[【競合】三菱UFJ銀行\|【競合】三菱UFJ銀行]]
-
 
 ## Other
 
