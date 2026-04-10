@@ -29,7 +29,7 @@ const {
 const { basesPlugin } = require("./src/helpers/basesPlugin");
 
 const Image = require("@11ty/eleventy-img");
-function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
+function transformImage(src, cls, alt, sizes, widths = ["500", "1920", "auto"]) {
   let options = {
     widths: widths,
     formats: ["webp", "jpeg"],
@@ -351,6 +351,19 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("isoDate", function(date) {
     return date && date.toISOString();
+  });
+
+  eleventyConfig.addFilter("videoEmbed", function(str) {
+    if (!str) return str;
+    const videoExts = ["mp4", "mov", "webm", "ogv"];
+    return str.replace(/!\[\[([^\]]+)\]\]/g, function(match, filename) {
+      const ext = filename.split('.').pop().toLowerCase();
+      if (videoExts.includes(ext)) {
+        const encodedName = filename.split('/').map(p => encodeURIComponent(p)).join('/');
+        return `<video controls playsinline style="max-width:100%"><source src="/img/user/files/${encodedName}" type="video/${ext}"></video>`;
+      }
+      return match;
+    });
   });
 
   eleventyConfig.addFilter("link", function(str) {
