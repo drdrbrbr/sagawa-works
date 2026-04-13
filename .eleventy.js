@@ -360,7 +360,7 @@ module.exports = function(eleventyConfig) {
       const ext = filename.split('.').pop().toLowerCase();
       if (videoExts.includes(ext)) {
         const encodedName = filename.split('/').map(p => encodeURIComponent(p)).join('/');
-        return `<video controls playsinline style="max-width:100%"><source src="/img/user/files/${encodedName}" type="video/${ext}"></video>`;
+        return `<video controls playsinline style="max-width:100%;max-height:640px"><source src="/img/user/files/${encodedName}" type="video/${ext}"></video>`;
       }
       return match;
     });
